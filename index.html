@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript APIs</title>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <main
@@ -20,22 +21,23 @@
           Open the Browser Console to view your work (Right-Click => Inspect or
           fn+F12)
         </p>
-        <div id="inputContainer">
+        <form id="inputContainer">
           <label for="searchWord">Giphy Search:</label>
           <input style="margin: 2rem" type="text" id="searchWord" />
           <button id="submitSearch">Giphy by Search</button>
-        </div>
+        </form>
 
         <div id="imageContainer" style="max-width: 680px">
           <img
+            id="gifImage"
             src="#"
             alt="Giphy Selection"
             style="width: 100%; height: auto"
           />
         </div>
+        <p id="feedback"></p>
       </div>
     </main>
 
-    <script src="app.js"></script>
   </body>
 </html>
